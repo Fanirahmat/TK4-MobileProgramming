@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,10 +24,18 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Login" />
+            android:text="Register" />
 
         <EditText
-            android:id="@+id/etEmailLogin"
+            android:id="@+id/etNameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etEmailRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -35,7 +43,7 @@
             android:inputType="text" />
 
         <EditText
-            android:id="@+id/etPasswordLogin"
+            android:id="@+id/etPasswordRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -43,24 +51,18 @@
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/btnSignIn"
+            android:id="@+id/btnSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SIGN IN" />
-
-        <Button
-            android:id="@+id/btnSignInGoogle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/design_default_color_secondary"
-            android:text="SIGN IN Google" />
+            android:text="SIGN UP" />
 
         <TextView
-            android:id="@+id/textSignUp"
+            android:id="@+id/textSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Register akun?" />
+            android:text="Login?" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
