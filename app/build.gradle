@@ -2,12 +2,13 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
 android {
     signingConfigs {
         debug {
-            storeFile file('/Users/mohammadfanirahmatulloh/Documents/Projects/MyKeystore/tk4_keystore.jks')
+            storeFile file('/Users/hanavial/AndroidStudioProjects/MyKeystore/tk4_keystore.jks')
             storePassword '12345678'
             keyAlias 'keymyapp'
             keyPassword '12345678'
@@ -57,4 +58,5 @@ dependencies {
     implementation("com.google.firebase:firebase-auth-ktx")
 
     implementation("com.google.android.gms:play-services-auth:20.6.0")
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
 }
